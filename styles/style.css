@@ -1,1 +1,114 @@
-/* место для вашего кода */
+.header {
+  display: grid;
+  padding: 91px 50px 94px;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  background-color: white;
+  color: black;
+  font-family: Raleway;
+  font-weight: normal;
+  font-size: 18px;
+}
+.cover {
+  position: relative;
+  padding: 155px 50px 50px;
+  min-height: 757px;
+  background-image: url("../images/cover.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.header__logo {
+  display: block;
+  width: 137px;
+}
+.header__links-list {
+  display: flex;
+  flex-direction: row;
+  gap: 34px;
+  text-transform: lowercase;
+}
+.header__links-list-item {
+  list-style: circle;
+}
+.header__links-list-item_no-bullit {
+  list-style-type: none;
+}
+.header__link {
+  text-decoration: underline;
+}
+.header__link_active {
+  text-decoration: none;
+}
+.address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 240px;
+  font-style: normal;
+  line-height: 1.35;
+}
+.header__address {
+  justify-self: end;
+}
+.cover__title {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 95px;
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 100px;
+  text-transform: uppercase;
+}
+.aligned-text {
+  display: block;
+  line-height: 1.35;
+  letter-spacing: 30px;
+}
+.aligned-text_left {
+  text-align: left;
+}
+/*почему то текст выровнялся криво*/
+.aligned-text_center {
+  text-align: center;
+}
+.aligned-text_right {
+  text-align: right;
+}
+.cover__description {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cover__description-text {
+  font-family: Raleway;
+  font-weight: normal;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+.letter-spacing-extended {
+  word-spacing: 19px;
+}
+.bet-button {
+  width: 256px;
+  height: 51px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  font-family: Raleway;
+  font-weight: normal;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
