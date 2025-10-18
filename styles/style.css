@@ -21,6 +21,7 @@
 .lots {
   position: relative;
   margin: 0 24px 120px;
+  background-color: white;
 }
 .about {
   display: grid;
@@ -28,6 +29,7 @@
   justify-items: center;
   grid-template-columns: 334px 1fr;
   column-gap: 27px;
+  background-color: white;
 }
 .footer {
   display: grid;
@@ -175,7 +177,7 @@
   z-index: 2;
   font-weight: normal;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2;
 }
 .lots__look-more-link {
   display: block;
@@ -212,7 +214,7 @@
   gap: 23px;
   font-weight: normal;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2;
 }
 .about__text__first-paragraph {
   width: 688px;
