@@ -9,7 +9,7 @@
 }
 .cover {
   position: relative;
-  padding: 155px 50px 50px;
+  padding: 155px 15px 50px 50px;
   min-height: 757px;
   margin-bottom: 180px;
   background-image: url("../images/cover.jpg");
@@ -85,19 +85,18 @@
   text-align: left;
 }
 .aligned-text_center {
-  padding-left: 30px;
   text-align: center;
 }
 .aligned-text_right {
-  padding-left: 615px;
-  text-align: center;
+  text-align: right;
+  padding-right: 5px;
 }
 .cover__description {
   position: relative;
   z-index: 1;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 105px;
 }
 .cover__description-text {
   font-weight: normal;
