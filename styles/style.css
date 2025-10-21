@@ -85,10 +85,12 @@
   text-align: left;
 }
 .aligned-text_center {
+  padding-left: 30px;
   text-align: center;
 }
 .aligned-text_right {
-  text-align: right;
+  padding-left: 615px;
+  text-align: center;
 }
 .cover__description {
   position: relative;
@@ -225,9 +227,6 @@
   list-style: none;
   padding: 0;
   text-transform: lowercase;
-}
-.footer__menu-list-item {
-  text-decoration: underline;
 }
 .footer__menu-link_active {
   text-decoration: none;
