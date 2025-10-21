@@ -13,13 +13,15 @@
     <header class="header">
       <nav class="header__menu">
         <ul class="header__links-list">
-          <li
-            class="header__links-list-item header__link header__link_active header__links-list-item_no-bullit"
-          >
-            главная
+          <li class="header__links-list-item header__links-list-item_no-bullit">
+            <a href="#0" class="header__link header__link_active"> главная</a>
           </li>
-          <li class="header__links-list-item header__link">посмотреть лоты</li>
-          <li class="header__links-list-item header__link">об аукционе</li>
+          <li class="header__links-list-item">
+            <a class="header__link" href="#0">посмотреть лоты</a>
+          </li>
+          <li class="header__links-list-item">
+            <a href="#0" class="header__link"> об аукционе </a>
+          </li>
         </ul>
       </nav>
       <a class="header__logo"
@@ -43,46 +45,60 @@
           <p class="cover__description-text letter-spacing-extended">
             аукцион вещей, в которые никто не верил
           </p>
-          <button class="bet-button">сделать ставку</button>
+          <button type="button" class="bet-button">сделать ставку</button>
         </div>
       </section>
       <section class="lots">
         <h2 class="lots__heading">лоты</h2>
         <ul class="lots__card-list">
           <li class="lots__card-list-item card_type_film">
-            <div class="overlay"></div>
-            <a href="#0" class="card__title"
-              >Фильм режиссёра, который бросил киношколу</a
-            >
-            <article class="card__text">
-              Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
-              ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
-            </article>
+            <a href="#0" class="card-link">
+              <article class="card">
+                <div class="overlay"></div>
+                <h3 class="card__title">
+                  Фильм режиссёра, который бросил киношколу
+                </h3>
+                <p class="card__text">
+                  Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+                  ставка, если бы вы не знали, что режиссёр — Пол Томас
+                  Андерсон?
+                </p>
+              </article>
+            </a>
           </li>
           <li class="lots__card-list-item card_type_book">
-            <div class="overlay"></div>
-            <a href="#0" class="card__title"
-              >Книга, где описан один скучный день из жизни рекламного агента</a
-            >
-            <article class="card__text">
-              Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
-              переходами на древнеанглийский. В ней одновременно рассказывается
-              о 16 июня 1904 года и об истории литературы, начиная с античных
-              времён. И это всё накладывается на эпическую поэму Гомера. Сколько
-              бы вы поставили на «Улисса» Джеймса Джойса?
-            </article>
+            <a href="#0" class="card-link">
+              <article class="card">
+                <div class="overlay"></div>
+                <h3 class="card__title">
+                  Книга, где описан один скучный день из жизни рекламного агента
+                </h3>
+                <p class="card__text">
+                  Объёмом почти в тысячу страниц. Иногда без знаков препинания и
+                  с переходами на древнеанглийский. В ней одновременно
+                  рассказывается о 16 июня 1904 года и об истории литературы,
+                  начиная с античных времён. И это всё накладывается на
+                  эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
+                  Джеймса Джойса?
+                </p>
+              </article>
+            </a>
           </li>
           <li class="lots__card-list-item card_type_picture">
-            <div class="overlay"></div>
-            <a href="#0" class="card__title"
-              >Картина, которую повторит даже 5-летний сын маминой подруги</a
-            >
-            <article class="card__text">
-              Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то
-              похожее на инфузорию-туфельку. Никаких полей, лесов, котиков...
-              Сколько бы вы на такое поставили, если бы не знали, что это — одна
-              из революционных работ Кандинского?
-            </article>
+            <a href="#0" class="card-link">
+              <article class="card">
+                <div class="overlay"></div>
+                <h3 class="card__title">
+                  Картина, которую повторит даже 5-летний сын маминой подруги
+                </h3>
+                <p class="card__text">
+                  Ну действительно, там линия, тут кружочек, а здесь и вовсе
+                  что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
+                  котиков... Сколько бы вы на такое поставили, если бы не знали,
+                  что это — одна из революционных работ Кандинского?
+                </p>
+              </article>
+            </a>
           </li>
         </ul>
         <a href="#0" class="lots__look-more-link">посмотреть больше</a>
@@ -98,14 +114,14 @@
         <div class="about__information">
           <h2 class="about__title">об аукционе</h2>
           <div class="about__text">
-            <div class="about__text__first-paragraph">
+            <p>
               Здесь вы не встретите очередное пафосное собрание невероятно
               дорогого антиквариата. Наши лоты вообще не должны были попасть ни
               на один аукцион. Потому что кому нужен дневник девочки-подростка
               или картина, которую может нарисовать даже ребёнок? Кому нужны все
               эти странные вещи, созданные любителями?
-            </div>
-            <div class="about__text__second-paragraph">
+            </p>
+            <p>
               Слишком сложные или, наоборот, слишком простые. Опережающие своё
               время. В пух и прах растерзанные критиками. Непринятые и
               непонятые. Когда-то они казались просто неудачными. Но, несмотря
@@ -113,7 +129,7 @@
               лотов невозможно представить современную культуру. Когда в эти
               вещи не верил никто, продолжали верить их создатели. И сейчас эти
               лоты стали культовыми.
-            </div>
+            </p>
           </div>
         </div>
       </section>
@@ -126,16 +142,22 @@
       </address>
       <nav class="footer__menu">
         <ul class="footer__menu-list">
-          <li class="footer__menu-list-item footer__menu-link_active">
-            главная
+          <li class="footer__menu-list-item">
+            <a href="#0" class="footer__menu-link footer__menu-link_active">
+              главная
+            </a>
           </li>
-          <li class="footer__menu-list-item">посмотреть лоты</li>
-          <li class="footer__menu-list-item">об аукционе</li>
+          <li class="footer__menu-list-item">
+            <a href="#0" class="footer__menu-link">посмотреть лоты</a>
+          </li>
+          <li class="footer__menu-list-item">
+            <a href="#0" class="footer__menu-link">об аукционе</a>
+          </li>
         </ul>
       </nav>
       <ul class="footer__social-list">
         <li class="footer__social-list-item">
-          <a href="#0" class="footer__social-link"
+          <a href="#0" target="_blank" class="footer__social-link"
             ><img
               class="footer__social-icon"
               src="./images/yt.svg"
@@ -143,12 +165,12 @@
           /></a>
         </li>
         <li class="footer__social-list-item">
-          <a href="#0" class="footer__social-link"
+          <a href="#0" target="_blank" class="footer__social-link"
             ><img class="footer__social-icon" src="./images/vk.svg" alt="VK"
           /></a>
         </li>
         <li class="footer__social-list-item">
-          <a href="#0" class="footer__social-link"
+          <a href="#0" target="_blank" class="footer__social-link"
             ><img
               class="footer__social-icon"
               src="./images/pinterest.svg"

@@ -3,7 +3,6 @@
   padding: 91px 50px 94px;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  background-color: white;
   color: black;
   font-weight: normal;
   font-size: 18px;
@@ -21,7 +20,6 @@
 .lots {
   position: relative;
   margin: 0 24px 120px;
-  background-color: white;
 }
 .about {
   display: grid;
@@ -29,13 +27,11 @@
   justify-items: center;
   grid-template-columns: 334px 1fr;
   column-gap: 27px;
-  background-color: white;
 }
 .footer {
   display: grid;
   padding: 0 50px 82px;
   grid-template-columns: 1fr 1fr 1fr;
-  background-color: white;
   color: black;
   font-weight: normal;
   font-size: 18px;
@@ -57,9 +53,6 @@
 }
 .header__links-list-item_no-bullit {
   list-style-type: none;
-}
-.header__link {
-  text-decoration: underline;
 }
 .header__link_active {
   text-decoration: none;
@@ -93,11 +86,9 @@
 }
 .aligned-text_center {
   text-align: center;
-  margin-left: 30px;
 }
 .aligned-text_right {
   text-align: right;
-  margin-left: 615px;
 }
 .cover__description {
   position: relative;
@@ -115,8 +106,9 @@
   word-spacing: 19px;
 }
 .bet-button {
+  cursor: pointer;
   width: 256px;
-  height: 51px;
+  min-height: 51px;
   border: 1px solid white;
   background-color: transparent;
   color: white;
@@ -145,18 +137,24 @@
   flex-wrap: wrap;
   color: white;
   list-style: none;
-  padding: 0;
 }
 .lots__card-list-item {
+  width: 334px;
+  min-height: 596px;
+  background-size: cover;
+  background-position: center;
+}
+.card-link {
+  height: 100%;
+  text-decoration: none;
+}
+.card {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 334px;
-  min-height: 596px;
   padding: 48px 40px;
-  background-size: cover;
-  background-position: center;
+  height: 100%;
 }
 .card_type_film {
   background-image: url("../images/card-lot-01.jpg");
@@ -172,6 +170,7 @@
   font-weight: bold;
   font-size: 22px;
   text-transform: uppercase;
+  text-decoration: underline;
 }
 .card__text {
   z-index: 2;
@@ -216,12 +215,6 @@
   font-size: 20px;
   line-height: 1.2;
 }
-.about__text__first-paragraph {
-  width: 688px;
-}
-.about__text__second-paragraph {
-  width: 693px;
-}
 .footer__address {
   justify-self: start;
 }
@@ -247,4 +240,7 @@
   gap: 48px;
   list-style: none;
   padding: 0;
+}
+.footer__menu-link_active {
+  text-decoration: none;
 }
